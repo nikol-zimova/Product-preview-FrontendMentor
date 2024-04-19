@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body>
+  <main class="content"> 
+    <section class="content-container">
+      <div class="photo-container">
+        <img 
+            srcset="images/image-product-desktop.jpg 1440w, 
+                    images/image-product-mobile.jpg 375w,
+                    images/image-product-mobile.jpg 1024w,
+                    images/desktop.jpg 1440w" 
+            sizes="(max-width: 375px) 375px,
+                  (max-width: 1024px) 1024px,
+                  (min-width: 1025px) 1440px"
+            src="images/image-product-desktop.jpg"
+            alt="product photo of a perfume bottle"
+            class="product-photo">
+      </div>
+      <div class="text-container">
+        <header class="title">Perfume</header>
+        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price-container">
+          <h2 class="current-price">$149.99</h2>
+          <h3 class="old-price">$169.99</h3>
+        </div>
+        <div class="add-to-cart-button">
+          <a href="#"><img alt="cart icon" class="cart-icon" src="images/icon-cart.svg">Add to Cart</a>
+        </div>
+      </div> 
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa/hub" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/nikol-zimova">Nikol</a>.
+  </footer>
+</body>
+</html>
